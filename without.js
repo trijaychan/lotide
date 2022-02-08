@@ -33,5 +33,6 @@ const without = function(arr, elements) {
 };
 
 const words = ["hello", "world", "lighthouse"];
-console.log(without(words, ["lighthouse"]));
-console.log(without(words, ["lighthouse", "world"]));
+assertArraysEqual(without(words, []), words);
+assertArraysEqual(without(words, ["lighthouse"]), words);
+assertArraysEqual(without(words, ["lighthouse", "world"]), words);
